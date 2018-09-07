@@ -6,10 +6,20 @@ class boyar(scrapy.Spider):
     name = "boyar"
     dic = {}
     url = 'http://www.boyar.cn/column/135/'
-    i = 0
+    lst = []
 
     def start_requests(self):
-        yield scrapy.Request(url=self.url, callback=self.parse)
+        # yield scrapy.Request(url=self.url, callback=self.parse)
+        yield scrapy.Request(url='http://www.boyar.cn/article/2018/08/28/764902.shtml', callback=self.parse_1)
+
+    def parse_1(self, response):
+        td_lst = []
+        trs = response.css('div#ctn tr[height="17"]')
+        for tr in trs:
+            td_lst.append(tr.css('td *::text').extract())
+            self.lst.append(td_lst)
+        print(self.lst)
+        print(len(self.lst))
 
     def parse(self, response):
         cur_page = response.css('div#feed_lb')
@@ -20,6 +30,8 @@ class boyar(scrapy.Spider):
             lst = [per.css('a::text').extract_first(), per.css('div.lmrq::text').extract_first()]
             value = lst
             self.dic[key] = value
+
+            yield scrapy.Request(url=key, callback=self.parse_1)
 
         next_page_flag = response.css('a::attr(title)').extract()
         if '下一页' in next_page_flag:
@@ -39,10 +51,11 @@ class boyar(scrapy.Spider):
             }
             yield scrapy.FormRequest(url=post_url, method='POST', headers=headers, formdata=post_data, dont_filter=True, callback=self.parse)
         else:
-            filename = 'pig.txt'
-            print(len(self.dic))
-            with open(filename, 'a') as f:
-                for key, value in self.dic.items():
-                    f.write('%s\t: %s\n' % (key, value))
+            pass
+            # filename = 'pig.txt'
+            # print(len(self.dic))
+            # with open(filename, 'a') as f:
+            #     for key, value in self.dic.items():
+            #         f.write('%s\t: %s\n' % (key, value))
 
-                self.log('保存文件: %s' % filename)
+            #     self.log('保存文件: %s' % filename)
