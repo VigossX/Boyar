@@ -1,0 +1,173 @@
+2018-09-10 14:11:03 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: boyar)
+2018-09-10 14:11:03 [scrapy.utils.log] INFO: Versions: lxml 4.2.4.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-7-6.1.7601-SP1
+2018-09-10 14:11:03 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'boyar', 'LOG_FILE': 'all.log', 'NEWSPIDER_MODULE': 'boyar.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['boyar.spiders']}
+2018-09-10 14:11:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-10 14:11:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-10 14:11:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-10 14:11:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-09-10 14:11:04 [scrapy.core.engine] INFO: Spider opened
+2018-09-10 14:11:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-10 14:11:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-10 14:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boyar.cn/robots.txt> (referer: None)
+2018-09-10 14:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boyar.cn/column/135/> (referer: None)
+2018-09-10 14:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <POST http://www.boyar.cn/column/135/> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-09-10 14:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://www.boyar.cn/column/135/> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boyar.cn/article/2018/09/10/766349.shtml> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boyar.cn/article/2018/09/07/766246.shtml> (referer: http://www.boyar.cn/column/135/)
+2018-09-10 14:11:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-09-10 14:11:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 1,
+ 'downloader/request_bytes': 50059,
+ 'downloader/request_count': 117,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/request_method_count/POST': 113,
+ 'downloader/response_bytes': 707922,
+ 'downloader/response_count': 116,
+ 'downloader/response_status_count/200': 116,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 10, 6, 11, 30, 82208),
+ 'log_count/DEBUG': 118,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 113,
+ 'response_received_count': 116,
+ 'retry/count': 1,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 1,
+ 'scheduler/dequeued': 116,
+ 'scheduler/dequeued/memory': 116,
+ 'scheduler/enqueued': 116,
+ 'scheduler/enqueued/memory': 116,
+ 'start_time': datetime.datetime(2018, 9, 10, 6, 11, 4, 252730)}
+2018-09-10 14:11:30 [scrapy.core.engine] INFO: Spider closed (finished)
