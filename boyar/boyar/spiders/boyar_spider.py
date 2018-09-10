@@ -1,25 +1,48 @@
 # -*- coding:utf-8 -*-
 import scrapy
+import cx_Oracle
+import uuid
 
 
 class boyar(scrapy.Spider):
     name = "boyar"
     dic = {}
     url = 'http://www.boyar.cn/column/135/'
-    lst = []
 
     def start_requests(self):
-        # yield scrapy.Request(url=self.url, callback=self.parse)
-        yield scrapy.Request(url='http://www.boyar.cn/article/2018/08/28/764902.shtml', callback=self.parse_1)
+        yield scrapy.Request(url=self.url, callback=self.parse)
 
-    def parse_1(self, response):
+    def parse_1(self, response, title, date):
         td_lst = []
+        cur_arr = []
         trs = response.css('div#ctn tr[height="17"]')
         for tr in trs:
-            td_lst.append(tr.css('td *::text').extract())
-            self.lst.append(td_lst)
-        print(self.lst)
-        print(len(self.lst))
+            cur_arr = tr.css('td *::text').extract()
+            num = len(cur_arr)
+            if num == 7:
+                cur_arr.insert(0, td_lst[len(td_lst) - 1][0])
+            elif cur_arr[0] == '合计':
+                break
+            td_lst.append(cur_arr)
+        # 连接oracle
+        try:
+            conn = cx_Oracle.connect(
+                'tmis_test2018/tmis_test2018@47.100.1.178/tmis')
+            curs = conn.cursor()
+            i = 0
+            for row in td_lst:
+                # sql语句
+                sqlUpd = 'INSERT INTO BOYAR_135 ("DATA_ID","PROVINCE","CITY","DATA_1","DATA_2","DATA_3","DATA_4","DATA_5","DATA_6","TITLE","OPEN_DATE") VALUES (\'' + str(uuid.uuid1(
+                ))+'\',\'' + row[0] + '\',\'' + row[1] + '\',\'' + row[2] + '\',\'' + row[3] + '\',\'' + row[4] + '\',\'' + row[5] + '\',\'' + row[6] + '\',\'' + row[7] + '\',\'' + title + '\',TO_DATE(\'' + date + '\', \'YYYY-MM-DD\'))'
+                curs.execute(sqlUpd)
+                i = i + 1
+                if i == 100:
+                    conn.commit()
+                    i = 0
+        finally:
+            conn.commit()
+            curs.close()
+            conn.close()
 
     def parse(self, response):
         cur_page = response.css('div#feed_lb')
@@ -27,11 +50,10 @@ class boyar(scrapy.Spider):
             # url连接
             key = per.css('a::attr(href)').extract_first()
             # 文字题目，日期
-            lst = [per.css('a::text').extract_first(), per.css('div.lmrq::text').extract_first()]
+            lst = [per.css('a::text').extract_first(), per.css(
+                'div.lmrq::text').extract_first()]
             value = lst
             self.dic[key] = value
-
-            yield scrapy.Request(url=key, callback=self.parse_1)
 
         next_page_flag = response.css('a::attr(title)').extract()
         if '下一页' in next_page_flag:
@@ -51,7 +73,7 @@ class boyar(scrapy.Spider):
             }
             yield scrapy.FormRequest(url=post_url, method='POST', headers=headers, formdata=post_data, dont_filter=True, callback=self.parse)
         else:
-            pass
+            # pass
             # filename = 'pig.txt'
             # print(len(self.dic))
             # with open(filename, 'a') as f:
@@ -59,3 +81,9 @@ class boyar(scrapy.Spider):
             #         f.write('%s\t: %s\n' % (key, value))
 
             #     self.log('保存文件: %s' % filename)
+            # i = 0
+            for key, value in self.dic.items():
+                yield scrapy.Request(url=key, callback=lambda response, title=value[0], date=value[1]: self.parse_1(response, title, date))
+                # i += 1
+                # if i == 2:
+                #     return
